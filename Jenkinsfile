@@ -8,7 +8,7 @@ dev Home = tool name: 'Maven3', type: 'maven'
 stage ('Compile-Package')  {
     // Get maven home path
     dev Home = tool name: 'Maven3', type: 'maven'
-    sh "${mvnHome}/bin/mvn package'
+    sh "${mvnHome}/bin/mvn package"
     
     }
 
