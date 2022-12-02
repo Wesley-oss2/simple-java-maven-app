@@ -14,6 +14,6 @@ stage ('Compile-Package')  {
 
 stage ('Code Quality scan')  {
        withSonarQubeEnv('SonarQube') {
-       sh "${mvnHome}/opt/mvn -f MyWebApp/pom.xml sonar:sonar"
+       sh "${mvnHome}/opt/mvn -f App.java sonar:sonar"
         }
    }
