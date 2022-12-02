@@ -6,7 +6,7 @@ def mvnHome = tool 'Maven3'
 }
 
 stage ('build')  {
-    sh "${mvnHome}/bin/mvn clean install -f MyWebApp/pom.xml"
+    sh "${mvnHome}/opt/mvn clean install -f MyWebApp/pom.xml"
     }
 
 stage ('Code Quality scan')  {
