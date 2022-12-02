@@ -10,6 +10,6 @@ dev Home = tool name: 'Maven3', type: 'maven'
 }
 stage ('Code Quality scan')  {
        withSonarQubeEnv('SonarQube') {
-       sh "${mvnHome}/opt/mvn -f App.java sonar:sonar"
+       sh "${mvnHome}/bin/mvn -f App.java sonar:sonar"
         }
    }
